@@ -1,0 +1,36 @@
+[project]
+name = "rag-end-doc-search"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13.2"
+dependencies = [
+ "langchain",
+ "langchain-community",
+ "langchain-openai",
+ "langgraph",
+ "openai",
+ "faiss-cpu",
+ "pydantic",
+ "python-dotenv",
+ "beautifulsoup4",
+ "requests",
+ "streamlit",
+ "wikipedia",
+ "pypdf"
+ ]
+
+[dependency-groups]
+dev = [
+    "ipykernel",
+]
+
+[tool.uv]
+link-mode = "copy"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["rag_doc_search"]
